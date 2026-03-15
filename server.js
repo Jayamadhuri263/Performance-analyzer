@@ -17,7 +17,11 @@ app.use(bodyParser.json());
 app.get('/', (req, res) => {
   res.json({
     name: 'Web Performance Analyzer API',
+    author: 'Jaya Madhuri Ganjikunta',
     version: '1.0',
+    description: 'Backend API for the Web Performance Analyzer. Analyzes page load performance, resources, and metrics via headless browser(Browserless).',
+    frontendUrl: 'https://web-performance-analyzer-f257b.web.app/',
+    contact: 'jayamadhuri263@gmail.com',
     endpoints: { analyze: 'POST /analyze', report: 'GET /report/:id', history: 'GET /history' },
   });
 });
